@@ -2,9 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "onboarding": true,
   "platform": "github",
-  "repositories": [
-    "iExecBlockchainComputing/*"
-  ],
+  "autodiscoverFilter": "iExecBlockchainComputing/*",
+  "autodiscover": true,
   "onboardingConfig": {
     "extends": [
       "github>iExecBlockchainComputing>renovate"
