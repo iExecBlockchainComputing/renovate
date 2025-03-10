@@ -14,8 +14,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Get Token
+        id: get_token
+        uses: peter-murray/workflow-application-token-action@v4
+        with:
+          application_id: "${{ secrets.RENOVATE_APPLICATION_ID }}"
+          application_private_key: ${{ secrets.RENOVATE_PRIVATE_KEY }}
+          organization: ${{ github.repository_owner }}
+
       - name: Self-hosted Renovate
         uses: renovatebot/github-action@v41.0.13
         with:
-          token: ${{ secrets.RENOVATE_TOKEN }}
+          token: ${{ steps.get_token.outputs.token }}
           configurationFile: renovate-config.json
