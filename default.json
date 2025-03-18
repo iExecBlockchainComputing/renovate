@@ -4,5 +4,149 @@
     "config:recommended",
     "group:allNonMajor",
     ":semanticCommitTypeAll(chore)"
+  ],
+  "labels": ["renovate"],
+  "prConcurrentLimit": 2,
+  "packageRules": [
+    {
+      "groupName": "ansible updates 🛠️",
+      "matchManagers": ["ansible", "ansible-galaxy"],
+      "addLabels": ["ansible 🛠️"]
+    },
+    {
+      "groupName": "batect updates 🚀",
+      "matchManagers": ["batect", "batect-wrapper"],
+      "addLabels": ["batect 🚀"]
+    },
+    {
+      "groupName": "bazel updates 🛠️",
+      "matchManagers": ["bazel", "bazel-module", "bazelisk"],
+      "addLabels": ["bazel 🛠️"]
+    },
+    {
+      "groupName": "c and c++ updates 🛠️",
+      "matchManagers": ["conan"],
+      "addLabels": ["c-cpp 🛠️"]
+    },
+    {
+      "groupName": "continuous delivery updates 🌐",
+      "matchManagers": ["argocd", "cdnurl", "fleet", "flux", "glasskube", "helmfile", "helmsman", "html", "sveltos", "tekton"],
+      "addLabels": ["cd 🌐"]
+    },
+    {
+      "groupName": "continuous integration updates 🔄",
+      "matchManagers": ["azure-pipelines", "bitbucket-pipelines", "bitrise", "buildkite", "circleci", "cloudbuild", "droneci", "github-actions", "gitlabci", "gitlabci-include", "jenkins", "tekton", "travis", "velaci", "woodpecker"],
+      "addLabels": ["ci 🔄"]
+    },
+    {
+      "groupName": "custom manager updates ✨",
+      "matchManagers": ["regex"],
+      "addLabels": ["custom ✨"]
+    },
+    {
+      "groupName": "dart updates 🎯",
+      "matchManagers": ["pub"],
+      "addLabels": ["dart 🎯"]
+    },
+    {
+      "groupName": "docker updates 🐳",
+      "matchManagers": ["buildpacks", "devcontainer", "docker-compose", "dockerfile"],
+      "addLabels": ["docker 🐳"]
+    },
+    {
+      "groupName": ".NET updates 💻",
+      "matchManagers": ["cake", "nuget"],
+      "addLabels": ["dotnet 💻"]
+    },
+    {
+      "groupName": "elixir updates 🧪",
+      "matchManagers": ["mix"],
+      "addLabels": ["elixir 🧪"]
+    },
+    {
+      "groupName": "golang updates 🦦",
+      "matchManagers": ["gomod", "ocb"],
+      "addLabels": ["golang 🦦"]
+    },
+    {
+      "groupName": "haskell updates 🔢",
+      "matchManagers": ["haskell-cabal"],
+      "addLabels": ["haskell 🔢"]
+    },
+    {
+      "groupName": "helm updates ☸",
+      "matchManagers": ["helm-requirements", "helm-values", "helmfile", "helmsman", "helmv3"],
+      "addLabels": ["helm ☸"]
+    },
+    {
+      "groupName": "iac updates 🏗️",
+      "matchManagers": ["ansible", "ansible-galaxy", "bicep", "crossplane", "puppet", "terraform", "terragrunt"],
+      "addLabels": ["iac 🏗️"]
+    },
+    {
+      "groupName": "java updates ☕",
+      "matchManagers": ["deps-edn", "gradle", "gradle-wrapper", "kotlin-script", "leiningen", "maven", "maven-wrapper", "sbt", "scalafmt"],
+      "addLabels": ["java ☕"]
+    },
+    {
+      "groupName": "javascript updates 🌐",
+      "matchManagers": ["bun", "bun-version", "meteor", "nodenv", "npm", "nvm"],
+      "addLabels": ["javascript 🌐"]
+    },
+    {
+      "groupName": "kubernetes updates 🚢",
+      "matchManagers": ["argocd", "crossplane", "fleet", "flux", "glasskube", "helm-requirements", "helm-values", "helmfile", "helmsman", "helmv3", "jsonnet-bundler", "kubernetes", "kustomize", "sveltos"],
+      "addLabels": ["kubernetes 🚢"]
+    },
+    {
+      "groupName": "perl updates 🧬",
+      "matchManagers": ["cpanfile"],
+      "addLabels": ["perl 🧬"]
+    },
+    {
+      "groupName": "php updates 🛠️",
+      "matchManagers": ["composer"],
+      "addLabels": ["php 🛠️"]
+    },
+    {
+      "groupName": "python updates 🐍",
+      "matchManagers": ["pep621", "pep723", "pip-compile", "pip_requirements", "pip_setup", "pipenv", "poetry", "pyenv", "runtime-version", "setup-cfg"],
+      "addLabels": ["python 🐍"]
+    },
+    {
+      "groupName": "ruby updates 💎",
+      "matchManagers": ["bundler", "puppet", "ruby-version"],
+      "addLabels": ["ruby 💎"]
+    },
+    {
+      "groupName": "rust updates 🦀",
+      "matchManagers": ["cargo"],
+      "addLabels": ["rust 🦀"]
+    },
+    {
+      "groupName": "swift updates 🏎️",
+      "matchManagers": ["cocoapods", "mint", "swift"],
+      "addLabels": ["swift 🏎️"]
+    },
+    {
+      "groupName": "terraform updates 🌍",
+      "matchManagers": ["terraform", "terraform-version", "terragrunt", "terragrunt-version", "tflint-plugin"],
+      "addLabels": ["terraform 🌍"]
+    },
+    {
+      "groupName": "minor updates 📉",
+      "matchUpdateTypes": ["minor"],
+      "addLabels": ["minor 📉"]
+    },
+    {
+      "groupName": "patch updates 🩹",
+      "matchUpdateTypes": ["patch"],
+      "addLabels": ["patch 🩹"]
+    },
+    {
+      "groupName": "major updates 🚨",
+      "matchUpdateTypes": ["major"],
+      "addLabels": ["major 🚨"]
+    }
   ]
 }
