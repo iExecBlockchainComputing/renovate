@@ -2,8 +2,7 @@
   "description": "Default config for iExec repositories",
   "extends": [
     "config:recommended",
-    "group:allNonMajor",
-    ":semanticCommitTypeAll(chore)"
+    "group:allNonMajor"
   ],
   "labels": ["renovate"],
   "prConcurrentLimit": 2,
