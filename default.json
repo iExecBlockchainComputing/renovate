@@ -6,7 +6,7 @@
   ],
   "labels": ["renovate"],
   "prConcurrentLimit": 2,
-  "baseBranches": ["develop"]
+  "baseBranches": ["develop"],
   "packageRules": [
     {
       "groupName": "ansible updates 🛠️",
